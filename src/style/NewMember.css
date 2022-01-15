@@ -1,0 +1,84 @@
+.new-member-body{
+    width: 387px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 11.6189px 124.28px rgba(37, 72, 153, 0.17);
+    border-radius: 23.2377px;
+    position: absolute;
+    transform: translate(11px,223px);
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 25px 32px;
+}
+.new-member-body .title{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    color: #151515;
+}
+.new-member-body .form{
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.new-member-body .form .name-input{
+    width: 100%;
+    height: 73px;
+    background: #F5F7FB;
+    border-radius: 7.68293px;
+    border: none;
+    text-indent:15.32px;
+    font-weight: 600;
+    font-size: 20.37px;
+    line-height: 20px;
+    color: #151515;
+}
+
+.new-member-body .form .name-input::placeholder{
+    font-weight: 600;
+    font-size: 20.37px;
+    line-height: 20px;
+    color: #151515;
+}
+
+.new-member-body .form label{
+    width: 100%;
+    height: 73px;
+    background: #F5F7FB;
+    border-radius: 7.68293px;
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 27px;
+
+}
+
+.new-member-body .form label:hover{
+    background: #0613FE;
+    cursor: pointer;
+    transition: 300ms all ease-in-out;
+}
+.new-member-body .form label:hover  svg path{
+    fill: #fff;
+    stroke: #fff;
+    transition: 300ms all ease-in-out;
+}
+.new-member-body .form label:hover span{
+  color: #fff;
+}
+.new-member-body .form  label span{
+  margin-left: 58px;
+    font-weight: 600;
+    font-size: 20.37px;
+    line-height: 20px;
+    color: #151515;
+
+}
+
+
+.new-member-body .form  input[type="file"]{
+display: none;
+}

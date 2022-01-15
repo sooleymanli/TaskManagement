@@ -31,7 +31,7 @@
 }
 
 .menu-item:hover{
-    background: #fff;
+    background: #E6ECF0;
     transition: 300ms all ease-in-out;
     cursor:  default;
 }

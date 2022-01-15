@@ -1,0 +1,48 @@
+.top-header{
+    widows: 100%;
+    height: 68px;
+    background: #0013FE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25.33px;
+    padding: 0 20px;
+}
+.menu-item svg{
+    margin-right: 10px;
+}
+.menu-item svg path{
+    fill: #fff;
+}
+.menu-item span{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.menu-item:hover{
+    background: #fff;
+    transition: 300ms all ease-in-out;
+    cursor:  default;
+}
+
+.menu-item:hover svg path{
+    fill: #0013FE;
+    transition: 300ms all ease-in-out;
+}
+
+.menu-item:hover span{
+    color: #0013FE;
+    transition: 300ms all ease-in-out;
+
+}

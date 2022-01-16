@@ -1,3 +1,9 @@
+#active{
+    display: flex;
+}
+#deactive{
+    display: none;
+}
 .new-member-body{
     width: 387px;
     height: 400px;
@@ -6,7 +12,7 @@
     border-radius: 23.2377px;
     position: absolute;
     transform: translate(11px,223px);
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 32px 32px 25px 32px;
 }
@@ -81,4 +87,44 @@
 
 .new-member-body .form  input[type="file"]{
 display: none;
+}
+
+.new-member-body .buttons{
+    width: 100%;
+    margin-top: 50px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-member-body .buttons button{
+    width: 143px;
+    height: 100%;
+    border: none;
+    border-radius: 10.561px;
+    cursor: pointer;
+}
+
+.new-member-body .buttons button.cancel-button{
+    background: #F5F7FB;
+    font-weight: 600;
+    font-size: 18.4817px;
+    line-height: 32px;
+    color: rgba(21, 25, 32, 0.5);
+}
+.new-member-body .buttons button.save-button{
+    background: #0013FE;
+    font-weight: 600;
+    font-size: 18.4817px;
+    line-height: 32px;
+    color: #fff;
+}
+.new-member-body .buttons button.cancel-button:hover{
+    background: #d8f8fc;
+
+}
+.new-member-body .buttons button.save-button:hover{
+    background: #282bf1;
+
 }

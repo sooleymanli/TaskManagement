@@ -59,6 +59,9 @@ border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .members-header-right .avatars .member-img:nth-child(1){

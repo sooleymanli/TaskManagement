@@ -1,5 +1,5 @@
 .top-header{
-    widows: 100%;
+    width: 100%;
     height: 68px;
     background: #0013FE;
     display: flex;
@@ -44,5 +44,13 @@
 .menu-item:hover span{
     color: #0013FE;
     transition: 300ms all ease-in-out;
+
+}
+
+
+@media only screen and (max-width: 576px){
+.top-header{
+    display: none;
+}
 
 }

@@ -7,15 +7,24 @@ function MembersHeader(props) {
 
     const [membersNew, setMembersNew] = useState([]);
     const [newMemberPopup,setNewMemberPopup]=useState("deactive")
-const [memberCount,setMemberCount]=useState()
+    const [memberCount,setMemberCount]=useState()
+
+    useEffect(()=>{
+        axios.get('http://localhost:3000/members')
+            .then(function (response) {
+                setMembersNew(response.data.reverse())
+
+                setMemberCount(response.data.length)
+            })
+
+    },[])
+
     const showPopup = ()=>{
         setNewMemberPopup("active")
-
     }
 
     const hidePopup = () =>{
         setNewMemberPopup("deactive")
-
     }
     const plusMember = ()=>{
         setMemberCount(memberCount+1)
@@ -27,25 +36,16 @@ const [memberCount,setMemberCount]=useState()
                 setMembersNew(response.data.reverse())
                 setMemberCount(response.data.length)
             })
-
     }
-    useEffect(()=>{
-        axios.get('http://localhost:3000/members')
-            .then(function (response) {
-                setMembersNew(response.data.reverse())
 
-                setMemberCount(response.data.length)
-            })
 
-    },[])
+
 
     return (
-
         <div className="members-header">
             <div className="members-header-left">
                 <span className="team-title">Product Design Team</span>
                 <span className="sprint-count">Sprint {memberCount}</span>
-
             </div>
             <div className="members-header-right">
                 <div className="avatars">
@@ -60,16 +60,15 @@ const [memberCount,setMemberCount]=useState()
 
                     })}
 
-
-
                     <div className="member-img member-count">+{memberCount-4}</div>
                 </div>
                 <div className="new-member">
                     <span onClick={showPopup}>+ New Memmber</span>
                 </div>
                 <NewMember display={newMemberPopup}  function={hidePopup}  plusMember={plusMember} changeState={changeState}/>
-
             </div>
+
+
         </div>
     );
 }

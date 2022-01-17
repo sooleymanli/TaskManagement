@@ -1,0 +1,199 @@
+.board-div{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 18px;
+    width: 100%;
+}
+
+.board-div .columns{
+    display: flex;
+    margin-left: 18px;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+}
+.board-div .columns:first-child{
+
+    margin-left: 0;
+
+
+}
+.board-div .columns .block{
+    width: 100%;
+
+
+}
+.board-div .columns  .block .column{
+    padding: 0 15px 15px 15px;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 0 0 5px 5px;
+}
+
+.board-div .columns .title-column-name{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E6ECF0;
+    border-radius: 5px 5px 0 0;
+}
+.board-div .columns    .title-column-name .span-title{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+
+
+}
+.board-div .columns .title-column-name .circle{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: #D5D5D5;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+
+
+}
+
+
+.board-div .columns  .block .column .item{
+    user-select: none;
+    padding: 12px 12px 0 12px;
+    margin: 0 0 8.5px 0;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.board-div .columns  .block .column .item .item-title{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+    color: #1D2D35;
+}
+
+.board-div .columns  .block .column .item .item-description{
+    margin-top: 12px;
+    color: #1D2D35;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+
+}
+.board-div .columns  .block .column .item .item-assigne{
+    margin-top: 12px;
+}
+.board-div .columns  .block .column .item .item-assigne span{
+    padding: 4px 12px;
+    background: #0013FE;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+
+}
+
+
+.board-div .columns  .block .column .item  .item-footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E6ECF0;
+    margin-top: 12px;
+}
+.board-div .columns  .block .column .item  .item-footer .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.board-div .columns  .block .column .item  .item-footer .left span{
+    margin-left: 4px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    color: #1D2D35;
+
+
+}
+
+.board-div .columns  .block .column .item  .item-footer .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.board-div .columns  .block .column .item  .item-footer .right .assigne-avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .board-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin-top: 18px;
+        width: 100%;
+    }
+
+    .board-div .columns{
+        display: flex;
+        margin-left: 0;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 18px;
+
+    }
+
+    .board-div .columns  .block .column{
+        padding: 0 15px 15px 15px;
+        width: 100%;
+        min-height: 100px;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+
+
